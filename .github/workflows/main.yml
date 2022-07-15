@@ -7,4 +7,4 @@ jobs:
     steps:
       - name: Betterscan action step
         id: scan
-        uses: topcodersonline/betterscan@v1
+        uses: topcodersonline/betterscan@v3
