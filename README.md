@@ -1,4 +1,4 @@
-# Scanmycode docker action
+# Betterscan.io docker action
 
 This action scans the code using Betterscan.io
 
