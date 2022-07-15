@@ -1,0 +1,6 @@
+# action.yml
+name: 'Betterscan Scan'
+description: 'Scan with Betterscan CE'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
