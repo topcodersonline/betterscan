@@ -4,3 +4,7 @@ description: 'Scan with Betterscan CE'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+branding:
+  icon: 'award'  
+  color: 'green'
+  
