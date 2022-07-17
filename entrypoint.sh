@@ -9,4 +9,4 @@ cd $CODE_DIR && checkmate issues
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 git init && git add . && git commit -m "init"
-git push origin
+git push origin `git rev-parse --abbrev-ref HEAD`
