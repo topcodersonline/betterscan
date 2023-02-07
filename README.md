@@ -8,3 +8,6 @@ Action preserves state in .checkmate folder (only new commits/changes will be re
 
 uses: topcodersonline/betterscan@v3
 
+## Support
+
+info@betterscan.io
