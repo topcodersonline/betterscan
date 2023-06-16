@@ -1,19 +1,23 @@
 # action.yml
 name: 'Betterscan Scan'
 description: 'Scan with Betterscan CE'
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  steps:
-    - name: Store state
-      uses: actions/upload-artifact@v2
-      with:
-        name: sate
-        path: .checkmate
-    - name: Get state
-      uses: actions/download-artifact@v2
-      with:
-        name: state
+
+
+jobs:
+  build:
+      runs-on: ubuntu-latest
+      container:
+        image: docker://scanmycode/scanmycode3-ce:worker-cli
+      steps:
+        - name: Store state
+          uses: actions/upload-artifact@v2
+          with:
+            name: state
+            path: .checkmate
+        - name: Get state
+          uses: actions/download-artifact@v2
+          with:
+            name: state
 branding:
   icon: 'award'  
   color: 'green'
