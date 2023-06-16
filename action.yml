@@ -4,15 +4,16 @@ description: 'Scan with Betterscan CE'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  - name: Store state
-    uses: actions/upload-artifact@v2
-    with:
-      name: sate
-         path: .checkmate
-  - name: Get state
-    uses: actions/download-artifact@v2
-    with:
-      name: state
+  steps:
+    - name: Store state
+      uses: actions/upload-artifact@v2
+      with:
+        name: sate
+        path: .checkmate
+    - name: Get state
+      uses: actions/download-artifact@v2
+      with:
+        name: state
 branding:
   icon: 'award'  
   color: 'green'
