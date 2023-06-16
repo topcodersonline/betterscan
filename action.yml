@@ -4,8 +4,6 @@ description: 'Scan with Betterscan CE'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-runs:
-  using: 'composite'
   - name: Store state
     uses: actions/upload-artifact@v2
     with:
